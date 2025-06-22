@@ -18,15 +18,10 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
-  experimental: {
-    optimizeCss: true,
-  },
-  compress: true,
   poweredByHeader: false,
-  generateEtags: false,
-  httpAgentOptions: {
-    keepAlive: true,
-  },
+  compress: true,
+  swcMinify: true,
+  output: 'standalone',
 }
 
 export default nextConfig
